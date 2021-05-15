@@ -120,17 +120,7 @@ export default function ProductEditScreen(props) {
               ></input>
             </div>
             <div>
-              <label htmlFor="image">Paveiksliukas</label>
-              <input
-                id="image"
-                type="text"
-                placeholder="Įvesti paveiksliuką"
-                value={image}
-                onChange={(e) => setImage(e.target.value)}
-              ></input>
-            </div>
-            <div>
-              <label htmlFor="imageFile">Image File</label>
+              <label htmlFor="imageFile">Paveiksliukas</label>
               <input
                 type="file"
                 id="imageFile"
