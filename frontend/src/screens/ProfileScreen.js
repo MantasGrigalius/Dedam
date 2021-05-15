@@ -87,6 +87,7 @@ export default function ProfileScreen() {
                 id="password"
                 type="password"
                 placeholder="Slaptažodis"
+                minlength="8"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
             </div>
@@ -96,6 +97,7 @@ export default function ProfileScreen() {
                 id="confirmPassword"
                 type="password"
                 placeholder="Patvirtinti slaptažodį"
+                minlength="8"
                 onChange={(e) => setConfirmPassword(e.target.value)}
               ></input>
             </div>

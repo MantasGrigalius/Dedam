@@ -66,6 +66,7 @@ export default function RegisterScreen(props) {
             type="password"
             id="password"
             placeholder="Slaptažodis"
+            minlength="8"
             required
             onChange={(e) => setPassword(e.target.value)}
           ></input>
@@ -76,6 +77,7 @@ export default function RegisterScreen(props) {
             type="password"
             id="Password"
             placeholder="Patvirtinti slaptažodį"
+            minlength="8"
             required
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></input>
