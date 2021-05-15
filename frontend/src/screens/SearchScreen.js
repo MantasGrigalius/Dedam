@@ -66,15 +66,15 @@ export default function SearchScreen(props) {
               props.history.push(getFilterUrl({ order: e.target.value }));
             }}
           >
-            <option value="newest">Newest Arrivals</option>
-            <option value="lowest">Price: Low to High</option>
-            <option value="highest">Price: High to Low</option>
+            <option value="newest">Naujausi viršuje</option>
+            <option value="lowest">Pigiausi viršuje</option>
+            <option value="highest">Brangiausios viršuje</option>
           </select>
         </div>
       </div>
       <div className="row top">
-        <div className="col-1">
-          <h3>Department</h3>
+        <div className="col-1-side">
+          <h4>Kategorijos</h4>
           <div>
             {loadingCategories ? (
               <LoadingBox></LoadingBox>
@@ -87,7 +87,7 @@ export default function SearchScreen(props) {
                     className={'all' === category ? 'active' : ''}
                     to={getFilterUrl({ category: 'all' })}
                   >
-                    Any
+                    Visi
                   </Link>
                 </li>
                 {categories.map((c) => (
@@ -104,7 +104,7 @@ export default function SearchScreen(props) {
             )}
           </div>
           <div>
-            <h3>Price</h3>
+            <h4>Kaina</h4>
             <ul>
               {prices.map((p) => (
                 <li key={p.name}>
@@ -129,7 +129,7 @@ export default function SearchScreen(props) {
           ) : (
             <>
               {products.length === 0 && (
-                <MessageBox>No Product Found</MessageBox>
+                <MessageBox>Produktų nerasta</MessageBox>
               )}
               <div className="row center">
                 {products.map((product) => (

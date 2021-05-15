@@ -84,7 +84,7 @@ export default function CartScreen(props) {
           <ul>
             <li>
               <h2>
-                Išviso ({cartItems.reduce((a, c) => a + c.qty, 0)} prekių): €
+                Iš viso ({cartItems.reduce((a, c) => a + c.qty, 0)} prekių): €
                 {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
               </h2>
             </li>
