@@ -41,11 +41,12 @@ export default function SigninScreen(props) {
             id="email"
             placeholder="Elektroninis paštas"
             required
+            minlength="8"
             onChange={(e) => setEmail(e.target.value)}
           ></input>
         </div>
         <div>
-          <label htmlFor="password">Elektroninis paštas</label>
+          <label htmlFor="password">Slaptažodis</label>
           <input
             type="password"
             id="password"

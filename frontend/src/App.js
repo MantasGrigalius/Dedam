@@ -105,9 +105,6 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="/dashboard">Pagrindinis</Link>
-                  </li>
-                  <li>
                     <Link to="/productlist/pageNumber/1">Produktai</Link>
                   </li>
                   <li>
@@ -124,7 +121,7 @@ function App() {
         <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul className="categories">
             <li>
-              <strong>Categories</strong>
+              <strong>Kategorijos</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"

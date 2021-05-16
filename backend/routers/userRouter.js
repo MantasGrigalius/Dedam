@@ -33,7 +33,7 @@ userRouter.post(
       }
     }
     res.status(401).send({
-      message: "Netinka elektroninis paštas arba slaptažodis",
+      message: "Neegzistuoja paskyra su tokiu elektroniniu paštu arba slaptažodiu",
     });
   })
 );
